@@ -184,3 +184,81 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* ******************* MEDIA QUERIES ************************ */
+/* SERVICES PAGE*/
+
+@media screen and (max-width: 800px) {
+	.menu {
+		flex-direction: column-reverse;
+		align-items: center;
+		width: 100%;
+	}
+	.top-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	.services-main-content {
+		padding-bottom: 3%;
+		width: 100%;
+	}
+
+	.services {
+		width: 90%;
+	}
+
+	.logo {
+		padding-bottom: 20%;
+	}
+
+	body {
+		padding:5%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	header nav {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}	
+
+	header nav a {
+		font-size: 16px;
+		padding: 10px;
+		justify-content: center;
+		width: 100%;
+		border: 1px solid gray;
+	}	
+
+	body {
+		padding: 0;
+	}
+
+	.main-content, .contact {
+		margin: 2%;
+		padding-bottom: 0.5%;
+	}
+
+	.features, .about {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		width:90%;
+		padding-top: 4%;
+	}
+	
+	.services, .product, .vision {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		width: 90%;
+		padding-top: 4%;
+	}
+}
